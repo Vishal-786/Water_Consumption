@@ -4,9 +4,9 @@ import pickle
 import os
 
 import joblib
-joblib.dump(model, 'model.pkl')
 
 model = joblib.load('model.pkl')
+
 
 
 st.set_page_config('Water Consumption App')
