@@ -1,4 +1,6 @@
-streamlit
-scikit-learn
-pandas
 numpy
+pandas
+scikit-learn
+streamlit
+joblib
+pickle-mixin  # If you're using pickle explicitly in some cases
