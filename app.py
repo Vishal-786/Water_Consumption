@@ -1,6 +1,7 @@
 import numpy as np
 import streamlit as st
 import pickle
+import os
 
 current_dir = os.path.dirname(__file__)
 model_path = os.path.join(current_dir, 'model.pickle')
