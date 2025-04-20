@@ -2,7 +2,12 @@ import numpy as np
 import streamlit as st
 import pickle
 
-model = pickle.load(open('model.pickle','rb'))
+current_dir = os.path.dirname(__file__)
+model_path = os.path.join(current_dir, 'model.pickle')
+
+with open(model_path, 'rb') as file:
+    model = pickle.load(file)
+
 
 st.set_page_config('Water Consumption App')
 
