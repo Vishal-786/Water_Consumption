@@ -3,11 +3,10 @@ import streamlit as st
 import pickle
 import os
 
-current_dir = os.path.dirname(__file__)
-model_path = os.path.join(current_dir, 'model.pickle')
+import joblib
+joblib.dump(model, 'model.pkl')
 
-with open(model_path, 'rb') as file:
-    model = pickle.load(file)
+model = joblib.load('model.pkl')
 
 
 st.set_page_config('Water Consumption App')
