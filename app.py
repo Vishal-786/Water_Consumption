@@ -1,14 +1,9 @@
 import os
 import streamlit as st
-import pickle
+import joblib
 
-# Check if the model file exists
-if os.path.exists('model.pkl'):
-    st.write("Model file is found!")
-    # If the file is found, load the model
-    model = pickle.load(open('model.pkl', 'rb'))
-else:
-    st.write("Model file is NOT found!")
+model = joblib.load('model.pkl')
+
 
 
 
